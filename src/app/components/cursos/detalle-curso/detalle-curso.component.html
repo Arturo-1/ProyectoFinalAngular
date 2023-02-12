@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row pt-4">
+      <h1>Seccion Cursos</h1>
+    </div>
+    <div class="row pb-4">
+      <p> Más de 1000 Cursos Online Certificados en Crehana! Encuentra Cursos en linea y capacitaciones de todas las categorías para aprender a tu ritmo.</p>
+      <br>
+      <p>Descubre un amplio contenido de formación sin coste para impulsar tu negocio o carrera profesional. Aprende todo lo que necesites seleccionando módulos concretos o, si lo prefieres, haz un curso completo.</p>
+    </div>
+ 
+  <br>
+  <div class="container">
+    <div class="row pt-3">
+            <mat-card *ngFor="let data of cursos">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{data.nombre}}</mat-card-title>
+                <mat-card-subtitle>{{data.area}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src={{data.img}} class="img-fluid">
+            <mat-card-content>
+                <p class="text-justify">
+                {{data.descripcion}}
+                </p>
+            </mat-card-content>
+            <mat-card-actions class=" justify-content-center">
+                <button mat-button color="accent" matTooltip="Eliminar Curso">
+                <mat-icon>delete</mat-icon>
+                </button>
+                <button class="m-1" mat-icon-button color="primary"   matTooltip="Actualizar informacion">
+                <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-button color="accent" matTooltip="Ver Detalles del Curso">
+                <mat-icon>visibility</mat-icon>
+                </button>
+                
+            </mat-card-actions>
+            <div class="row d-flex justify-content-center">
+                <button  mat-button mat-raised-button color="primary">Inscribirme</button>
+            </div>
+            </mat-card>
+    </div>
+ </div>

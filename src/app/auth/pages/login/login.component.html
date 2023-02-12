@@ -1,0 +1,38 @@
+<main class="login">
+    <form [formGroup]="LoginForm"  >
+        <h1 class="title"> Ingreso Sistema</h1>
+        <div class="row d-flex">   
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <i class="fa fa-user mr-4 "></i>
+                <input placeholder="Nombre" class="form-control"
+                name="user" formControlName="usuario" type="text" id="user" required>  
+            </div>
+            <br>
+        </div>
+        <div class="col-md-12 text-left ml-4 mt-1" *ngIf="LoginForm.controls['usuario'].invalid && (LoginForm.controls['usuario'].dirty || LoginForm.controls['usuario'].touched)" [ngClass]="error" >
+            <span *ngIf="LoginForm.controls['usuario'].errors">
+                El nombre es requerido
+            </span>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <i class="fa fa-lock mr-4 "></i>
+                <input placeholder="Contraseña" class="form-control" formControlName="password" type="password" id="password" minlength="8">
+            </div>
+        </div>
+        <div class="col-md-12 text-left ml-4 mt-1" *ngIf="LoginForm.controls['password'].invalid && (LoginForm.controls['usuario'].dirty || LoginForm.controls['usuario'].touched)" [ngClass]="error" >
+        <div  *ngIf="LoginForm.controls['password'].errors?.['minlength']">
+            Minimo de caracteres es de 8
+          </div>
+        </div>
+        <br>
+        <a href="#" class="link">Recuperar Contraseña?</a>
+        <button [disabled]="loading" mat-flat-button color="primary" (click)="onLogin()">{{ loading ? 'Iniciando sesión' : 'Ingresar' }}</button>
+    </form>
+
+     
+    
+
+</main>
+

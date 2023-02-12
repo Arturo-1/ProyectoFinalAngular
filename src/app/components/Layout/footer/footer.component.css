@@ -1,0 +1,32 @@
+
+
+footer .backFoo {
+    background: radial-gradient(ellipse at top, #0c185c, transparent), radial-gradient(ellipse at bottom, #082950, transparent);
+    padding: 20px; 
+}
+/*   
+footer .inlineSec2 {
+    display: inline-block;
+    text-align: center; 
+} */
+  
+footer .colorText {
+    color: #ffff; 
+}
+  
+footer .icon-soc {
+    margin: 10px 10px;
+    transition: all 300ms ease-in-out;
+    text-align: center; 
+}
+footer .icon-soc:hover {
+    transform: scale(2) translateY(-2px);
+    color: #abccdb; 
+}
+  
+.prueba{
+    display:flex;
+    justify-content: center;
+    display: block;
+
+}

@@ -1,0 +1,52 @@
+<div class="container-fluid " >
+    <div class="sec-div p-5 m-5">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h1>Agregar Nuevo curso</h1>
+                <hr>
+            </div>
+        </div>
+        <div mat-dialog-content>
+        <form [formGroup]="cursoForm" >
+            <div class="p-5 mb-4 ">
+                <div class="col-md-10 offset-1 " > 
+                    <mat-form-field class="example-full-width col-md-6">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput formControlName="nombre">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width col-md-6">
+                        <mat-label>Area</mat-label>
+                        <input matInput  formControlName="area" >
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width col-md-6">
+                        <mat-label>Tutor</mat-label>
+                        <input matInput  formControlName="tutor">
+                    </mat-form-field>                   
+                    <mat-form-field class="example-full-width col-md-6">
+                        <mat-label>Codigo</mat-label>
+                        <input matInput  formControlName="codigo" >
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width col-md-6">
+                        <mat-label>Precio</mat-label>
+                        <input matInput  formControlName="precio">
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width col-md-12">
+                        <mat-label>Descripcion:</mat-label>
+                        <textarea matInput  formControlName="descripcion"></textarea>
+                    </mat-form-field>
+
+                    <button class="m-3 btn-success"  mat-button type="submit" (click)="AddCurso(cursoForm.value)" matTooltip="Agregar Curso" >
+                        <mat-icon>edit_square</mat-icon>&nbsp;&nbsp;Agregar
+                    </button>
+                    <button class="m-3 btn-danger" routerLink="/dashboard/cursos" mat-button (click)="clear()"  matTooltip="Agregar Curso" >
+                        <mat-icon>close</mat-icon>Cancelar
+                    </button>
+                </div>   
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
+<div>
+</div>

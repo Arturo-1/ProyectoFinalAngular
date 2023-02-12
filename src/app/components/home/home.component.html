@@ -1,0 +1,58 @@
+<!-- <div class="container sec-home mt-5">
+    <div class="row ">
+        <h1>Seleccione Opcion deseada?</h1>
+    </div>
+
+
+
+    <section>
+        <button class="btn-primary" routerLink="/alumnos">Alumnos</button>
+        <button class="btn-success" routerLink="/cursos">Cursos</button>
+        <button class="btn-warning" routerLink="/usaurios">Usuarios</button>
+
+    </section>
+	
+   
+</div> -->
+<section class="row pt-5">
+    <div class="col-md-10 offset-1 sec-carousel mb-5">
+        <ngb-carousel >
+            <ng-template ngbSlide *ngFor="let item of carousel">
+                <a (click)="filterCorousel(item.id)">
+                    <div class="picsum-img-wrapper" >
+                        <img class="" src="{{item.img}}" alt="Random first slide" />
+                    </div>
+                    <div class="carousel-caption">
+                       <h1>{{item.name}}</h1>
+                        <h4>{{item.desc}}</h4>
+                    </div>
+                </a>
+            </ng-template>
+        </ngb-carousel>
+
+       
+        <div class="row m- pt-5 pb-5">
+            <div class="col-md-5 offset-1 sec-content p-4">
+                <div class="div ">
+                    <h1>Sin salir de casa</h1>
+                    <hr>
+                    <p>Adquiere los mejores conocimientos con nuestros cursos y aprende sin la necesidad de salir de casa. Deja tu futuro en nuestra manos,</p>
+                <div class="div d-flex justify-content-center text-aling-center">
+                    <img src="../../../assets/img/cursos/img-home-1.jpg" alt="">
+                </div>
+            </div>
+            </div>
+            <div class="col-md-5 offset-1  sec-content ">
+                <div class="div d-flex justify-content-center text-aling-center">
+                    <img src="../../../assets/img/cursos/img-home-1.jpg" alt="">
+                </div>
+                <h1>Sin salir de casa</h1>
+                <hr>
+                <p>Adquiere los mejores conocimientos con nuestros cursos y aprende sin la necesidad de salir de casa. Deja tu futuro en nuestra manos,</p>  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

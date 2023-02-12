@@ -1,0 +1,47 @@
+<div class="modal-add-alumno">
+    <div class="modal-header">
+      <h2 mat-dialog-title>Agregar Alumno</h2>
+    </div>
+    <div class="modal-body">
+      <div mat-dialog-content>
+        <form [formGroup]="studentForm" >
+          <div class="row ">
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input formControlName="nombre" matInput required>
+            </mat-form-field>
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Apellidos</mat-label>
+              <input formControlName="apellidos" matInput required>
+            </mat-form-field>
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Edad</mat-label>
+              <input type="number" formControlName="edad" matInput required>
+            </mat-form-field>
+          </div>
+          <div class="row">
+              <mat-form-field  class="m-2"  appearance="fill">
+                <mat-label>Carrera</mat-label>
+                <input formControlName="carrera" matInput required>
+              </mat-form-field>
+
+              <mat-form-field  class="m-2"  appearance="fill">
+                <mat-label>Institucion</mat-label>
+                <input formControlName="institucion" matInput required>
+              </mat-form-field>
+              
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div mat-dialog-actions>
+        <button class="btn btn-success" mat-button [mat-dialog-close]="studentForm.value" disabled="{{ studentForm.invalid }}">Confirmar</button>
+        <ng-template [ngTemplateOutlet]="cancelModal" ></ng-template>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #cancelModal>
+    <button class="btn btn-danger" mat-button mat-dialog-close>Close</button>
+  </ng-template>

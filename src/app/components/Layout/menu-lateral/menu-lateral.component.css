@@ -1,0 +1,67 @@
+
+.fondo{
+
+    background-color: rgb(60, 60, 60);
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+li{
+    margin-top: 40px; 
+}
+
+.sec-option{
+    font-size: 25px !important;
+    color: rgb(117, 115, 115);
+    
+}
+hr{
+    margin: 0px;
+    padding: 0px;
+    height: 2px;
+  background-color: rgb(83, 103, 217);
+}
+
+.title-home{
+    font-size: 30px !important;
+}
+.icon-home{
+    transform: scale(1.5) !important; 
+}
+ span{
+    /* color: aliceblue; */
+    font-size: 20px ;
+    color: #f7d8d8 !important;
+    text-decoration:none;
+}
+a span:hover{
+    color: #db4a4a !important;
+    transition: color .4s !important;
+    
+}
+
+.toolbar-item-spacer {
+    flex: 1 1 auto;
+}
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+.app-sidenav {
+    width: 230px;
+}
+.app-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+} 
+
+.crm-navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+  }

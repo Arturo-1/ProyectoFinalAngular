@@ -1,0 +1,72 @@
+.pruebacon{
+    background-color: red;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.color0{
+    background-color: rgb(243, 193, 166);
+}
+.color1{
+    background-color: rgb(104, 104, 239);
+}
+.color2{
+    background-color: rgb(207, 241, 181);
+}
+.color3{
+    background-color: rgb(243, 225, 137);
+}
+
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+/* Success syling */
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #155724;
+}
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+  background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+  color: #f0fff3;
+  background-color: #155724;
+}
+
+.mat-icon-button.mat-success {
+  color:#155724;
+}
+
+
+.mat-card-image{
+  width: 500px;
+  height: 400px;
+  align-items: center;
+  align-content: center;
+}
+
+tbody td .center{
+  text-align: center;
+}
+
+tbody td .left{
+  text-align: left;
+}
+
+thead th{
+  text-align: center;
+}
+
+table{
+  width: 100%;
+}

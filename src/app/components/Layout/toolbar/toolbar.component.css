@@ -1,0 +1,45 @@
+.img-logo {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-link{
+    padding-left: 60px !important;
+    justify-content: center !important
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.color_back{
+    
+    background-color: #0049b7;
+   
+}
+
+mat-toolbar{
+    color: #ffff;
+}
+.title{
+    padding-left: 20px;
+    font-size: 30px;
+    color: #ffff !important;
+    text-decoration:none;
+
+}
+.option{
+    font-size: 30px;
+    color: #ffff !important;
+}
+
+.img-user{
+    transform: scale(1.4); 
+    color: #ffff !important;
+}
+span{
+    color: #ffff !important;
+}
+  

@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row pt-4">
+      <h1>Seccion Cursos</h1>
+    </div>
+</div>
+  <section class="sec-tables">
+    <div class="row mt-5">
+        <div class="col-10 offset-1">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                <h2>Lista de cursos</h2>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center ">
+                    <div class="row">
+                        <button mat-flat-button color="primary" routerLink="agregar" ><mat-icon>movie</mat-icon>&nbsp; Agregar Nuevo Curso</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="filtroBusqueda">
+                <div class="col-md-6 ">
+                    <label class=" mt-2" for="">Ingrese {{valorFIltro | uppercase}}: </label>
+                    <div class="d-flex">
+                        <div>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" [formControl]="textoDeInput" [ngModel]="valorInput" >
+                        </div>
+                        <div class="ml-3">
+                            <!-- <button  *ngIf='textoDeInput' class="btn btn-success" >Buscar</button> -->
+                            <button *ngIf='textoDeInput' mat-raised-button color="success" ><mat-icon>search</mat-icon>&nbsp; Success</button>
+                            <button mat-raised-button color="warn" class="ml-3" ><mat-icon>reply</mat-icon>&nbsp; Regresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row p-2 ">
+                <table  mat-table  [dataSource]="dataSource"  class="mat-elevation-z8">                    
+                        <!-- Columna id -->
+                        <ng-container matColumnDef="id">
+                            <th appTheadTable mat-header-cell *matHeaderCellDef>{{ 'No.' | uppercase}} </th>
+                            <td mat-cell *matCellDef="let dataArreglo"> {{dataArreglo.id}} </td>
+                        </ng-container>
+                        <!-- Columna Nombre Curso -->
+                        <ng-container matColumnDef="nombre">
+                            <th appTheadTable mat-header-cell *matHeaderCellDef> {{'Nombre Curso' | uppercase}} </th>
+                            <td mat-cell *matCellDef="let dataArreglo">{{ dataArreglo.nombre }}</td>
+                        </ng-container>
+                        <!-- Columna Codigo -->
+                        <ng-container matColumnDef="codigo">
+                            <th appTheadTable mat-header-cell *matHeaderCellDef> {{ 'Codigo' | uppercase}} </th>
+                            <td mat-cell *matCellDef="let dataArreglo"> {{dataArreglo.codigo}} </td>
+                        </ng-container>
+                        <!-- Columna Tutor -->
+                        <ng-container matColumnDef="tutor">
+                            <th appTheadTable mat-header-cell *matHeaderCellDef> {{ 'Tutor' | uppercase}} </th>
+                            <td mat-cell *matCellDef="let dataArreglo"> {{dataArreglo.tutor}} </td>
+                        </ng-container>
+                        <!-- Columna Area -->
+                        <ng-container matColumnDef="area">
+                            <th appTheadTable mat-header-cell *matHeaderCellDef> {{ 'Area' | uppercase}} </th>
+                            <td mat-cell *matCellDef="let dataArreglo"> {{dataArreglo.area}} </td>
+                        </ng-container>
+                        <!-- Columna Area -->
+                       
+                        <ng-container matColumnDef="precio">
+                          <th appTheadTable mat-header-cell *matHeaderCellDef> {{ 'Precio' | uppercase}} </th>
+                          <td mat-cell *matCellDef="let dataArreglo"> {{dataArreglo.precio}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="acciones" stickyEnd>
+                            <th appTheadTable class="text-center" mat-header-cell *matHeaderCellDef aria-label="row actions">{{ 'Acciones' | uppercase}}</th>
+                            <td class="text-center" mat-cell *matCellDef="let element">
+                                <button class="m-1" mat-icon-button matTooltip="Eliminar Curso" (click)="deleteCurso(element.id)"  color="warn" >
+                                    <mat-icon>delete</mat-icon>
+                                </button>
+                                <button class="m-1" mat-icon-button color="primary" routerLink="editar" (click)="updateCurso(element)"  matTooltip="Actualizar informacion del Curdo">
+                                    <mat-icon>edit</mat-icon>
+                                </button>                            
+                               <button class="m-1" mat-icon-button color="primary" routerLink="detalle"  matTooltip="Mostrar Informacion del Curso">
+                                    <mat-icon>info</mat-icon>
+                                </button> 
+                            </td>
+                        </ng-container>
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <br><br>
+</section>

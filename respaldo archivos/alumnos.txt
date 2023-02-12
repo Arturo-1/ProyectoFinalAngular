@@ -1,0 +1,82 @@
+[
+  { 
+    "id": "1",
+    "nombre": "Arturo",
+    "apellidos": "Hernandez Reyes",
+    "edad": "30", 
+    "carrera": "Ingenieria en sistemas", 
+    "institucion": "universidad mexicana de especialidades"
+  },
+  {
+    "id": "2",
+    "nombre": "carlos adrian ",
+    "apellidos": "Rodriguez Quezada",
+    "edad": "25",
+    "carrera": "Ingenieria en mecatronica",
+    "institucion": "UANL"
+  },
+  {
+    "id": "3",
+    "nombre": "Agustin ",
+    "apellidos": "Espinoza Vazquez",
+    "edad": "24",
+    "carrera": "Ingenieria en mecatronica",
+    "institucion": "UANL"
+  },
+  {
+    "id": "4",
+    "nombre": "itzel",
+    "apellidos": "Perez Garcia",
+    "edad": "25",
+    "carrera": "Ingenieria Industrial",
+    "institucion": "tecnologico de monterrey"
+  },
+  {
+    "id": "5",
+    "nombre": "Luis",
+    "apellidos": "Morales mendez",
+    "edad": "23",
+    "carrera": "Ingenieria en sistemas",
+    "institucion": "universidad mexicana de especialidades"
+  },
+  {
+    "id": "6",
+    "nombre": "Alejandro",
+    "apellidos": "Lopez Moedano",
+    "edad": "26",
+    "carrera": "Ingenieria Industrial",
+    "institucion": "tecnologico de monterrey"
+  },
+  {
+    "id": "7",
+    "nombre": "Karen",
+    "apellidos": "Medina Vela",
+    "edad": "24",
+    "carrera": "Licenciatura En derecho",
+    "institucion": "tecnologico de monterrey"
+  },
+  {
+    "id": "8",
+    "nombre": "Rigoberto",
+    "apellidos": "Garcia Gomez",
+    "edad": "23",
+    "carrera": "Ingenieria en sistemas",
+    "institucion": "universidad mexicana de especialidades"
+  },
+  {
+    "id": "9",
+    "nombre": "Iker Miguel",
+    "apellidos": "Arreola hernandez",
+    "edad": "22",
+    "carrera": "Licenciatura En derecho",
+    "institucion": "tecnologico de monterrey"
+  },
+  {
+    "id": "10",
+    "nombre": "Brenda",
+    "apellidos": "Perez Garcia",
+    "edad": "31",
+    "carrera": "Ingenieria Industrial",
+    "institucion": "tecnologico de monterrey"
+  }
+]

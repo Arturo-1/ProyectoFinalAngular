@@ -1,0 +1,68 @@
+
+<nav>
+  
+    <mat-toolbar class="color_back" >
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon >menu</mat-icon>
+      </button>
+      <span ><a class="title" routerLink="home"> Cursos Online </a></span>
+      <div class="row d-flex justify-content-between" >
+      <mat-list >
+        <mat-list-item >
+          <a >
+            <div class="d-flex justify-content-center align-items-center">
+            <span class="pr-3" ><mat-icon class="ml-5 mt-2 img-user" >person</mat-icon></span>
+            <span>{{user}}</span>
+            </div>
+          </a>
+        </mat-list-item>
+      </mat-list>
+      <!-- <span class="example-spacer"></span> -->
+      <mat-list >
+        <mat-list-item *ngIf="usuarioSession !=0">
+          <a (click)="logout()">
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="mr-3">Logout</span>
+              
+              <mat-icon class=" img-user" >logout</mat-icon>
+            </div>
+            
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </div>
+      
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      </button>
+    </mat-toolbar>
+  
+</nav>
+<!-- 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div>
+            
+        </div>
+        <a class="navbar-brand" href="#">
+            <img class="img-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7gbhTNgTryGj3Y5ug9FtBqKks08o-ONw85envpyTYPP2VBGAv3kkH2wawsXFC3drbnY&usqp=CAU" alt="">
+            Cursos Online
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Informacion <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hobies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estudios</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            Contacto
+          </span>
+        </div>
+      </nav>  -->

@@ -1,0 +1,22 @@
+<div class="modal-add-alumno">
+  <div class="modal-header">
+    <h1 class="" mat-dialog-title>Desea Eliminar Paciente?</h1>
+    <mat-icon mat-dialog-close>close</mat-icon>
+  </div>
+  <div class="modal-body">
+    <div mat-dialog-content>
+      <p>Se eliminaran todos los datos correspondientes a el paciente. Confirme si desea continuar</p>
+      <br>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div mat-dialog-actions>
+      <button class="btn btn-success" mat-button mat-dialog-close (click)="confirmDelete()">Confirmar</button>
+      <ng-template [ngTemplateOutlet]="cancelModal" ></ng-template>
+    </div>
+  </div>
+</div>
+
+<ng-template #cancelModal>
+  <button class="btn btn-danger " mat-button mat-dialog-close>Close</button>
+</ng-template>
