@@ -12,6 +12,7 @@ import { MenuLateralComponent } from './Layout/menu-lateral/menu-lateral.compone
 import { ToolbarComponent } from './Layout/toolbar/toolbar.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { InscripcionesComponent } from './inscripciones/inscripciones.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ContenidoComponent,
     FooterComponent,
     MenuLateralComponent,
+    InscripcionesComponent
    
   ],
   imports: [
@@ -29,6 +31,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ComponentsRoutingModule,
     MatTableModule,
     MatPaginatorModule
+ 
   ],
   exports:[
     ComponentsComponent
