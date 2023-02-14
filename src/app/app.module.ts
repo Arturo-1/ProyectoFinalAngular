@@ -34,6 +34,9 @@ import { ContenidoComponent } from "./components/Layout/contenido/contenido.comp
 import { AlumnoComponent } from "./components/alumno/alumno.component";
 import { ComponentsModule } from './components/components.module';
 import { LoginComponent } from "./auth/pages/login/login.component";
+import { InscripcionComponent } from './components/modals/inscripcion/inscripcion.component';
+
+
 
 // import { StoreModule } from '@ngrx/store';
 // import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -48,6 +51,7 @@ import { LoginComponent } from "./auth/pages/login/login.component";
         LoginComponent,
         ModalsComponent,
         AddAlumnoComponent,
+        InscripcionComponent,
         MiCustomPipe,
         PipesComponent,
         TheadTableDirective,

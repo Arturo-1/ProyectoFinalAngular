@@ -1,1 +1,45 @@
-<p>inscripcion works!</p>
+<div class="modal-add-alumno">
+    <div class="modal-header">
+      <h2 mat-dialog-title>Agregar/Modificar Inscripcion</h2>
+    </div>
+    <div class="modal-body">
+      <div mat-dialog-content>
+        <form [formGroup]="InscripcionForm">
+          <div class="row ">
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input formControlName="nombre_alumno" matInput required>
+            </mat-form-field>
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Apellidos</mat-label>
+              <input formControlName="apellidos_alumno" matInput required>
+            </mat-form-field>
+            <mat-form-field class="m-2" appearance="fill">
+              <mat-label>Nombre del Curso</mat-label>
+              <input type="text" formControlName="nombre_curso" matInput required>
+            </mat-form-field>
+          </div>
+          <div class="row">
+              <mat-form-field class="m-2" appearance="fill">
+                <mat-label>Correo</mat-label>
+                <input type="text" formControlName="correo" matInput required>
+              </mat-form-field>
+              <mat-form-field class="m-2" appearance="fill">
+                <mat-label>Telefono</mat-label>
+                <input type="number" formControlName="telefono" matInput required>
+              </mat-form-field>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div mat-dialog-actions>
+        <button class="btn btn-success" mat-button [mat-dialog-close]="InscripcionForm.value" disabled="{{ InscripcionForm.invalid }}">Confirmar</button>
+        <ng-template [ngTemplateOutlet]="cancelModal" ></ng-template>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #cancelModal>
+    <button class="btn btn-danger" mat-button mat-dialog-close>Close</button>
+  </ng-template>
