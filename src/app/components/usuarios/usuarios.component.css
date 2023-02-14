@@ -6,3 +6,8 @@ table {
     font-size: 14px;
     width: 100%;
   }
+  hr{
+    height: 3px;
+    border: none;
+    background-color: rgb(15, 194, 62);
+}
