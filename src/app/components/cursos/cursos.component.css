@@ -11,7 +11,11 @@
     display: flex;
 }
 
-
+hr{
+  height: 3px;
+  border: none;
+  background-color: rgb(15, 194, 62);
+}
 
 .pruebacon{
     background-color: red;

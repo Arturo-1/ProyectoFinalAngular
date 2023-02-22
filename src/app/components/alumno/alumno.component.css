@@ -18,6 +18,12 @@ img {
 .color3{
     background-color: rgb(243, 225, 137);
 }
+hr{
+  height: 3px;
+  border: none;
+  background-color: rgb(15, 194, 62);
+}
+
 
 .example-button-row button,
 .example-button-row a {

@@ -18,7 +18,7 @@ import { InscripcionComponent } from '../modals/inscripcion/inscripcion.componen
 })
 export class InscripcionesComponent implements OnInit {
 
-  public dataSource:any = [];
+  dataSource:any;
   ELEMENT_DATA: IncripcionI[] = [];
   displayedColumns: string[] = ['Item', 'Nombre Alumno', 'Nombre Curso','correo','telefono','Acciones'];
 
@@ -41,6 +41,9 @@ export class InscripcionesComponent implements OnInit {
   cargarDatos(){
     this.ServiceInscrip.getInscripciones().subscribe(data =>{
       this.dataSource = data 
+      this.ELEMENT_DATA = this.dataSource;
+      this.dataSource = new MatTableDataSource(this.ELEMENT_DATA);
+     
     })
   }
 

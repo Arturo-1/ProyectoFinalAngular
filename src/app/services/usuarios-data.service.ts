@@ -21,8 +21,13 @@ export class UsuariosDataService {
   // }
 
   getUsuarios():Observable<UsersI[]>{
-    console.log(this.API_SERVER)
+    // console.log(this.API_SERVER)
     return this.httpClient.get<UsersI[]>(`${this.API_SERVER}/usuarios`);
+  }
+  deleteUsuario(id:any): Observable<any>{
+    
+    let rutaURL = `${this.API_SERVER}usuarios/${id}`  
+    return this.httpClient.delete<any>(rutaURL, id)
   }
 
 

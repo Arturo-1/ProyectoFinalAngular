@@ -83,7 +83,7 @@ import { InscripcionComponent } from './components/modals/inscripcion/inscripcio
         PagesModule,
         RouterModule,
         HttpClientModule,
-       
+     
         // StoreModule,
         // StoreModule.forRoot(),
         // EffectsModule.forRoot(),

@@ -51,13 +51,13 @@
               <ng-container matColumnDef="Acciones">
                 <th mat-header-cell class="text-center" *matHeaderCellDef> Acciones </th>
                 <td class="text-center" mat-cell *matCellDef="let element">
-                  <button class="m-1" mat-icon-button matTooltip="Eliminar Curso" color="warn" (click)="deleteInscripciones(element.id)">
+                  <button class="m-1" mat-icon-button matTooltip="Eliminar Inscripcion" color="warn" (click)="deleteInscripciones(element.id)">
                       <mat-icon>delete</mat-icon>
                   </button>
-                  <button class="m-1" mat-icon-button color="primary" (click)="updateInscripcion(element)"  matTooltip="Actualizar informacion del Curdo">
+                  <button class="m-1" mat-icon-button color="primary" (click)="updateInscripcion(element)"  matTooltip="Actualizar informacion de la inscripcion">
                       <mat-icon>edit</mat-icon>
                   </button>                            
-                 <button class="m-1" mat-icon-button color="primary" routerLink="detalle" matTooltip="Mostrar Informacion del Curso">
+                 <button class="m-1" mat-icon-button color="primary" routerLink="detalle" matTooltip="Mostrar detalles de Inscripcion">
                       <mat-icon>info</mat-icon>
                   </button> 
               </td>

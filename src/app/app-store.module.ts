@@ -5,13 +5,13 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { UsuariosStoreModule } from './components/usuarios/usuarios-store.module';
 import { UsuariosEffects } from './components/usuarios/store/usuarios.effects';
-
+import { reducer } from './components/usuarios/store/usuarios.reducer';
 
 @NgModule({
   declarations: [],
   imports: [
-    
-      StoreModule.forRoot(),
+    StoreModule,
+    StoreModule.forRoot({},{}),
     EffectsModule.forRoot([UsuariosEffects]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     UsuariosStoreModule

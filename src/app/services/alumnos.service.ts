@@ -33,7 +33,7 @@ export class AlumnosService {
     console.log(this.API_SERVER)
     return this.http.get<alumno[]>(`${this.API_SERVER}/alumnos`);
   }
-  AddAlumno(form:any):Observable<alumno[]>{
+  AddAlumno(form:any):Observable<any>{
     let rutaURL = `${this.API_SERVER}/alumnos` ;
     return this.http.post<any>(rutaURL, form)
   }
